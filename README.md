@@ -16,3 +16,7 @@ shorter version with bibliography
 https://docs.google.com/document/d/166tnSn21-0SDEFesurV9PFJcztkgJjX5vtrw2daZ5gQ/edit?usp=sharing
 aho-hopcroft - spis treści
 https://helion.pl/pobierz-fragment/algorytmy-i-struktury-danych-alfred-v-aho-john-e-hopcroft-jeffrey-d-ullman,alstrd/pdf
+
+
+### Konspekt
+https://docs.google.com/document/d/13rxpSczs3i7nouojHB0rHcetKaSBtivm-p4sBudahEY/edit?usp=sharing
