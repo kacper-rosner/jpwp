@@ -23,3 +23,4 @@ https://docs.google.com/document/d/13rxpSczs3i7nouojHB0rHcetKaSBtivm-p4sBudahEY/
 
 ### TODO:
 - implementacja skip listy wg: https://www.baeldung.com/java-skiplist
+lub preferowalnie : https://webdiis.unizar.es/asignaturas/APD/skip_list_cookbook.pdf
