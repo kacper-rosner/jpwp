@@ -50,9 +50,22 @@ class CuckooHashTable:
 # czas wykonania
         
     def lookup(self, key):
-        pass
+        if self.table1[self._hash1(key)] == key:
+            return ____ # True /  False
+        if self.table2[self._hash2(key)] == key:
+            return ____ # True /  False
+        return _____ # True /  False
+
     def delete (self, key):
-        pass
+        idx1 = self._hash1(key)
+        if self.table1[idx1] == key:
+            self.table1[idx1] = ____  # usuń wartość
+            return
+        idx2 = self._hash2(key)
+        if self.table2[idx2] == key:
+            self.table2[idx2] = ____ # usuń wartość
+            return
+        print("Klucza nie znaleziono")
 
 # Zadanie 1b - dodaj insert:
 
@@ -67,22 +80,54 @@ class CuckooHashTable:
 # Pamiętaj duplikat - nie dodajemy do tablicy
 
     def insert(self, key):
-        pass
+        if self.lookup(key):
+            _______ # Wsk.: co jeśli duplikat ? Nic.
+
+        curr_key = key
+       
+        # Odkomentuj po zrobieniu 1b, przed 1c - dodaj pętlę for wg. 1c.4
+        # _______________________________________________
+        pos1 = self._hash1(curr_key)
+        if self.table1[pos1] is None:
+            self.table1[pos1] = ______ # Co ma być wstawione
+            return
+        curr_key, self.table1[pos1] = self.table1[pos1], curr_key
+
+        pos2 = self._hash2(curr_key)
+        if self.table2[pos2] is None:
+            self.table2[pos2] = ______ # co ma być wstawione 
+            return
+        curr_key, self.table2[pos2] = self.table2[pos2], curr_key
+
+        # Odkomentuj po zrobieniu 1b, przed 1c
+        
+        # self.rehash()
+        # self.insert(curr_key)
 
 # Zadanie 1c - dodatkowe:
 # zapobiegnij możliwości powstania pętli przy insercie, 
-# - zmieniając funkcję hashującą
-# - zwiększając rozmiar tablic
-# - wsadzając ponownie wszystkie wartości do tablicy
-# - niech triggerem rehashu będzie powtarzanie insertu 
+# 1 zmieniając funkcję hashującą
+# 2 zwiększając rozmiar tablic
+# 3 wsadzając ponownie wszystkie wartości do tablicy
+# 4 niech triggerem rehashu będzie powtarzanie insertu 
 # int(self.size * 0.5)
 # (tak, to znaczy że musisz edytować funkcję insert)
 
     def rehash(self):
-        pass
-    
-
+        old_elements = [x for x in self.table1 if x is not None]
+        old_elements.extend([x for x in self.table2 if x is not None])
         
+        self.size *= 2
+        self.table1 = [None] * self.size
+        self.table2 = [None] * self.size
+        __________ = random.randint(1, 1000) # Wsk. 1c.1
+        __________ = random.randint(1, 1000) # Wsk. 1c.1
+        
+        for key in old_elements:
+            _______________
+            # Wsk. 1c.3 - uzyj insert
+    
+# Koniec zadań, początek testów !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     
 class TestCuckooHashing(unittest.TestCase):
     def test_insert_and_lookup(self):
