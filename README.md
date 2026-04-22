@@ -1,5 +1,10 @@
 # Zaawansowane Struktury Danych w Praktyce
 Projekt na potrzeby studiów dziennych Teleinformatyka, sem. IV
+
+## Linki
+https://www.cs.emory.edu/~cheung/Courses/253/Syllabus/Map/skip-list-impl.html
+
+
 ### Struktury danych do opracowania 
 - Listy
 - Drzewa
