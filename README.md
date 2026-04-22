@@ -8,6 +8,8 @@ https://www.jasondavies.com/bloomfilter/
 
 https://www.lkozma.net/cuckoo_hashing_visualization/
 
+https://www.cs.usfca.edu/~galles/visualization/SplayTree.html
+
 
 ### Struktury danych do opracowania 
 - Listy
