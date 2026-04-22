@@ -19,6 +19,7 @@ https://www.lkozma.net/cuckoo_hashing_visualization/
 - Tablice hashujace
 - Drzewa wyszukiwań
 - Struktury czasowe
+  ####
 longer version
 https://docs.google.com/document/d/1QvRcDioJwYQIqRk4FUo59n3WBulCuPbiJxu2UQTOyx0/edit?usp=sharing
 shorter version with bibliography
