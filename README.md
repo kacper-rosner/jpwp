@@ -3,7 +3,10 @@ Projekt na potrzeby studiów dziennych Teleinformatyka, sem. IV
 
 ## Linki
 https://www.cs.emory.edu/~cheung/Courses/253/Syllabus/Map/skip-list-impl.html
+
 https://www.jasondavies.com/bloomfilter/
+
+https://www.lkozma.net/cuckoo_hashing_visualization/
 
 
 ### Struktury danych do opracowania 
