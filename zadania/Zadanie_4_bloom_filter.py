@@ -2,7 +2,7 @@ import hashlib
 import unittest
 
 # Pomoc : https://www.jasondavies.com/bloomfilter/
-# Zadanie 2 - proste
+# Zadanie 3 - proste
 # Uzupełnij kod probabilistycznego filtru Blooma. 
 
 # Prawdopodobieństwo na powtórzenie się tych samych
@@ -27,7 +27,7 @@ class BloomFilter:
         return hashes
 
     def insert(self, key):
-        # Zadanie 2a - dodaj insert:
+        # Zadanie 3a - dodaj insert:
         # Policz które bity musisz ustawić na jeden, 
         # żeby zaprezentować, że coś jest w zbiorze i je zmień na 1. 
         
@@ -39,7 +39,7 @@ class BloomFilter:
             self.bit_array[idx] = ____ # 0/1
 
     def lookup(self, key):
-        # Zadanie 2b - dodaj lookup
+        # Zadanie 3b - dodaj lookup
         # Sprawdź czy bity, które odpowiadają za konkretną rzecz są prawdziwe
         # Może generować fałszywe poztywy
         """Zwraca True jeśli element może być w zbiorze, False jeśli na pewno go nie ma."""

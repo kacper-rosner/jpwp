@@ -1,7 +1,7 @@
 # Przed rozpoczęciem zadania, przetestuj działanie cuckoo hashing interaktywnie na stronie:
 # https://www.lkozma.net/cuckoo_hashing_visualization/
 
-# Zadanie 1
+# Zadanie 5
 # Uzupełnij kod hashowania cuckoo. 
 # Użyj testów do sprawdzenia poprawności działania
 
@@ -40,7 +40,7 @@ class CuckooHashTable:
     def _hash2(self, key):
         return (hash(key) ^ self.seed2) % self.size
 
-# Zadanie 1a - dodaj lookup i delete: 
+# Zadanie 5a - dodaj lookup i delete: 
 # element może znajdować się w dwóch lokacjach: 
 # tabeli pierwszej lub drugiej, na miejscach:
 
@@ -67,7 +67,7 @@ class CuckooHashTable:
             return
         print("Klucza nie znaleziono")
 
-# Zadanie 1b - dodaj insert:
+# Zadanie 5b - dodaj insert:
 
 # jeśli na sprawdzanym miejscu w jednej tablicy jest już element,
 # przesuń go do drugiej tablicy. 
@@ -104,7 +104,7 @@ class CuckooHashTable:
         # self.rehash()
         # self.insert(curr_key)
 
-# Zadanie 1c - dodatkowe:
+# Zadanie 5c - dodatkowe:
 # zapobiegnij możliwości powstania pętli przy insercie, 
 # 1 zmieniając funkcję hashującą
 # 2 zwiększając rozmiar tablic

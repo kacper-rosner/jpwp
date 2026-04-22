@@ -1,6 +1,8 @@
 import hashlib
 import unittest
 
+# Zadanie 6 - wykonaj wersjonowane merkle tree
+
 def get_sha256(data):
     return hashlib.sha256(data.encode()).hexdigest()
 

@@ -1,11 +1,11 @@
 import unittest
 
-# Zadanie 4 - zrób stos na liście pythonowskiej
+# Zadanie 1 - zrób stos na liście pythonowskiej
 # możliwości jest dużo, zadanie bardziej otwarte od 1,2,3
 
 class Stack:
     def __init__(self):
-        # Zadanie 4a
+        # Zadanie 1a
         # Inicjalizacja pustego magazynu danych
         self.items = _______
 
@@ -14,12 +14,12 @@ class Stack:
         return _______ == 0
 
     def push(self, item):
-        # Zadanie 4b
+        # Zadanie 1b
         # Dodanie elementu na koniec listy (szczyt stosu)
         self.items._______(item)
 
     def pop(self):
-        # Zadanie 4c
+        # Zadanie 1c
         # Usunięcie i zwrócenie ostatniego elementu
         if self._______():
             print("Stos jest pusty!")
@@ -27,7 +27,7 @@ class Stack:
         return self.items._______()
 
     def peek(self):
-        # Zadanie 4d
+        # Zadanie 1d
         # Podejrzenie ostatniego elementu bez usuwania go
         if not self.is_empty():
             return self.items[_______]
